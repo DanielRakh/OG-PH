@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1586511C7831E10016AC9F /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1586501C7831E10016AC9F /* PocketSVG.m */; };
+		8E1586571C798EE50016AC9F /* OGFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1586561C798EE50016AC9F /* OGFeedViewController.swift */; };
 		8ECBDC2B1C76CB3C00AB8463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBDC2A1C76CB3C00AB8463 /* AppDelegate.swift */; };
-		8ECBDC2D1C76CB3C00AB8463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBDC2C1C76CB3C00AB8463 /* ViewController.swift */; };
 		8ECBDC301C76CB3C00AB8463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBDC2E1C76CB3C00AB8463 /* Main.storyboard */; };
 		8ECBDC321C76CB3C00AB8463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBDC311C76CB3C00AB8463 /* Assets.xcassets */; };
 		8ECBDC351C76CB3C00AB8463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBDC331C76CB3C00AB8463 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E15864E1C7831E10016AC9F /* OG-PH-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OG-PH-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E15864F1C7831E10016AC9F /* PocketSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PocketSVG.h; sourceTree = "<group>"; };
+		8E1586501C7831E10016AC9F /* PocketSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PocketSVG.m; sourceTree = "<group>"; };
+		8E1586561C798EE50016AC9F /* OGFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGFeedViewController.swift; sourceTree = "<group>"; };
 		8ECBDC271C76CB3C00AB8463 /* OG-PH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OG-PH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECBDC2A1C76CB3C00AB8463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8ECBDC2C1C76CB3C00AB8463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8ECBDC2F1C76CB3C00AB8463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ECBDC311C76CB3C00AB8463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ECBDC341C76CB3C00AB8463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,12 +58,15 @@
 		8ECBDC291C76CB3C00AB8463 /* OG-PH */ = {
 			isa = PBXGroup;
 			children = (
+				8E15864F1C7831E10016AC9F /* PocketSVG.h */,
+				8E1586501C7831E10016AC9F /* PocketSVG.m */,
 				8ECBDC2A1C76CB3C00AB8463 /* AppDelegate.swift */,
-				8ECBDC2C1C76CB3C00AB8463 /* ViewController.swift */,
 				8ECBDC2E1C76CB3C00AB8463 /* Main.storyboard */,
+				8E1586561C798EE50016AC9F /* OGFeedViewController.swift */,
 				8ECBDC311C76CB3C00AB8463 /* Assets.xcassets */,
 				8ECBDC331C76CB3C00AB8463 /* LaunchScreen.storyboard */,
 				8ECBDC361C76CB3C00AB8463 /* Info.plist */,
+				8E15864E1C7831E10016AC9F /* OG-PH-Bridging-Header.h */,
 			);
 			path = "OG-PH";
 			sourceTree = "<group>";
@@ -135,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ECBDC2D1C76CB3C00AB8463 /* ViewController.swift in Sources */,
+				8E1586511C7831E10016AC9F /* PocketSVG.m in Sources */,
+				8E1586571C798EE50016AC9F /* OGFeedViewController.swift in Sources */,
 				8ECBDC2B1C76CB3C00AB8463 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +255,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "OG-PH/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielRakhamimov.OG-PH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OG-PH/OG-PH-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -258,10 +269,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "OG-PH/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielRakhamimov.OG-PH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OG-PH/OG-PH-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +297,7 @@
 				8ECBDC3B1C76CB3C00AB8463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
