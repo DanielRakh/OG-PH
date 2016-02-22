@@ -37,9 +37,15 @@ class OGFeedViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! OGFeedCell
+        
 
         // Configure the cell...
+        
+        if (indexPath.row % 2 == 0) {
+            print("even")
+            cell.productSubtitle.text = "Fast"
+        }
 
         return cell
     }
